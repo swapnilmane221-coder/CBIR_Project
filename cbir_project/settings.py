@@ -139,3 +139,18 @@ STATIC_URL = 'cbir_app/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'cbir_app', 'static'),
 ]
+import os
+
+# Static files (CSS, JavaScript, Images)
+STATIC_URL = '/static/'
+
+# ✅ Tell Django where to collect static files during deployment
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+# ✅ Optional but recommended for production (serves static files efficiently)
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+# ✅ Allow your app's static folder
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'cbir_app', 'static'),
+]
