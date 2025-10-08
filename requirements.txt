@@ -1,6 +1,6 @@
 Django==5.0.7
 tensorflow==2.20.0rc0
-faiss-cpu==1.8.0
+faiss-cpu== 1.10.0
 opencv-python
 numpy
 pillow
