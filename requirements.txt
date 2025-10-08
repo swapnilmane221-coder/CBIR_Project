@@ -1,0 +1,8 @@
+Django==5.0.7
+tensorflow==2.16.1
+faiss-cpu==1.8.0
+opencv-python
+numpy
+pillow
+gunicorn
+whitenoise
