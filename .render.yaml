@@ -5,5 +5,5 @@ services:
     buildCommand: |
       pip install -r requirements.txt
       python manage.py collectstatic --noinput
-    startCommand: gunicorn CBIR_PROJECT.wsgi
+      startCommand: gunicorn cbir_project.wsgi
     plan: free
