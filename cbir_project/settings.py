@@ -88,7 +88,7 @@ USE_TZ = True
 # ---------------------------------------------------------
 # ✅ STATIC FILES CONFIG (Required for Render)
 # ---------------------------------------------------------
-STATIC_URL = '/static/'
+STATIC_URL = '/media/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # Render collects here
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'cbir_app', 'static')]
@@ -97,7 +97,7 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'cbir_app', 'static')]
 # ---------------------------------------------------------
 # ✅ MEDIA FILES CONFIG (User uploads, etc.)
 # ---------------------------------------------------------
-MEDIA_URL = '/media/'
+MEDIA_URL = '/media/Images/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')  # use simple, lowercase folder
 
 
