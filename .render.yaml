@@ -7,3 +7,8 @@ services:
       python manage.py collectstatic --noinput
     startCommand: gunicorn cbir_project.wsgi
     plan: free
+    envVars:
+      - key: DJANGO_SETTINGS_MODULE
+        value: cbir_project.settings
+      - key: PYTHON_VERSION
+        value: 3.10
