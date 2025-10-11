@@ -1,1 +1,1 @@
-web: gunicorn CBIR_PROJECT.wsgi
+web: gunicorn cbir_project.wsgi
